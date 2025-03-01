@@ -84,7 +84,7 @@ document
     document.getElementById("text").remove();
   });
 
-const colors = ["purple", "orange", "blue", "green", "yellowgreen"];
+const colors = ["purple", "orange", "green", "blue", "yellowgreen"];
 let i = 0;
 
 document.getElementById("themBtn").addEventListener("click", function (event) {
