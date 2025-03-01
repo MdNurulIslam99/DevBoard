@@ -73,6 +73,7 @@ document
     handleToggle("completedBtn6", true);
   });
 
+// create date
 updateDate("addDate");
 
 //   Clear button Activity
@@ -84,7 +85,7 @@ document
     document.getElementById("text").remove();
   });
 
-const colors = ["purple", "orange", "green", "blue", "yellowgreen"];
+const colors = ["purple", "orange", "green", "blue", "yellowGreen"];
 let i = 0;
 
 document.getElementById("themBtn").addEventListener("click", function (event) {
