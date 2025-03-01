@@ -81,5 +81,14 @@ document
   .getElementById("activityBtn")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    document.getElementById("activity").style.display = "none";
+    document.getElementById("text").remove();
   });
+
+const colors = ["purple", "orange", "blue", "green", "yellowgreen"];
+let i = 0;
+
+document.getElementById("themBtn").addEventListener("click", function (event) {
+  event.preventDefault();
+  document.body.style.backgroundColor = colors[i];
+  i = (i + 1) % colors.length;
+});

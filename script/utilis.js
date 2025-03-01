@@ -25,34 +25,6 @@ function updateDate(id) {
   dateContainer.innerText = currentDate;
 }
 
-// function timeUpdate() {
-/* const now = new Date();
-const string = now.toLocaleTimeString("en-US", {
-  hour: "2-digit",
-  minute: "2-digit",
-  second: "2-digit",
-  hour12: true,
-});
-
-document.getElementById("activity").textContent = string; */
-// }
-// setInterval(timeUpdate, 1000);
-
-function updateTime() {
-  const now = new Date();
-  const timeString = now.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
-  });
-
-  //document.getElementById(id).textContent = timeString;
-}
-
-setInterval(updateTime, 1000);
-updateTime();
-
 // activity show when submit function
 function addTitle(id) {
   const container = document.getElementById("activity");
@@ -66,7 +38,7 @@ function addTitle(id) {
   const titleContent = document.getElementById(id).innerText;
   const div = document.createElement("div");
   div.classList.add("bg-[#F4F7FF]", "mt-5");
-  div.innerHTML = `<h2 class="p-4 text-base rounded-lg">You have completed the task 
-  <span class='font-semibold'>${titleContent}</span> at <span>${time}</span>`;
+  div.innerHTML = `<h2 id='text' class="p-4 text-base rounded-lg">You have completed the task 
+  <span class='font-semibold'>${titleContent}</span> at <span class='font-semibold'>${time}</span>`;
   container.appendChild(div);
 }
