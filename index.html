@@ -48,9 +48,9 @@
                     <div class="flex justify-center items-center gap-5">
                         <div class="btn space-x-2 p-4 bg-[#F4F7FF] rounded-2xl">
                             <img src="./assets/checkbox.png" alt="">
-                            <a class="text-2xl font-bold">23</a>
+                            <a id="boardValue" class="text-2xl font-bold">23</a>
                         </div>
-                        <div class="btn p-4 bg-[#F4F7FF] rounded-2xl">
+                        <div id="" class=" themBtn btn p-4 bg-[#F4F7FF] rounded-2xl">
                             <img class="w-7 h-7" src="./assets/theme-btn.png" alt="">
                         </div>
                     </div>
@@ -72,12 +72,12 @@
                         </div>
                         <div class="space-y-1">
                             <h3 class="text-base w-[130px]">Task Assigned </h3>
-                            <p class="text-2xl font-bold">05</p>
+                            <p id="taskAssigned" class="text-2xl font-bold">06</p>
                         </div>
                     </div>
 
-                    <div
-                        class="col-span-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-4 rounded-xl flex justify-center items-center gap-6">
+                    <div id="discount"
+                        class="btn h-[100px] col-span-6 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-4 rounded-xl flex justify-center items-center gap-6">
                         <div class="border-2 border-white border-dashed rounded-lg"><img src="./assets/board.png"
                                 alt="board"></div>
                         <div>
@@ -85,13 +85,12 @@
                         </div>
                     </div>
 
-                    <div class="col-span-3 flex justify-center items-center gap-4 bg-[#F4F7FF] p-4 rounded-xl">
+                    <div class="col-span-3 flex justify-center items-center gap-2 bg-[#F4F7FF] p-5 rounded-xl">
                         <div class="btn rounded-full w-[50px] h-[50px]"><img class="w-10 h-5"
                                 src="./assets/calender.png" alt="checkbox">
                         </div>
-                        <div class="space-y-2">
-                            <h3 class="text-base w-[130px]">Web,</h3>
-                            <p class="text-xl font-bold">Jul 28 2025</p>
+                        <div id="date" class="space-y-2">
+                            <h3 class="text-lg font-bold w-[150px]"><span id="addDate">Web,<br>Jul 28 2025</span></h3>
                         </div>
                     </div>
 
@@ -102,19 +101,21 @@
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
                             <a class="bg-white btn p-4 rounded-lg text-xs" href="">ShopEase</a>
-                            <h2 class="card-title">Fix Mobile Button Issue</h2>
+                            <h2 class="card-title"><span id="title">Fix Mobile Button Issue</span></h2>
                             <p class="flex justify-center items-center bg-white p-2 w-[250px] text-sm opacity-70">Debug
                                 using
                                 Chrome
                                 DevTools check
                                 for
                                 overlapping ...</p>
+                            <p class="border-b-2 border-dashed border-b-slate-300"></p>
                             <div class="flex justify-around items-center gap-5">
                                 <div>
                                     <p class="text-xs">Deadline</p>
                                     <h3 class="text-sm">21 March 2025</h3>
                                 </div>
-                                <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                                <button id="completedBtn"
+                                    class="btn box-completed bg-[#3752FD] text-white rounded-lg">completed</button>
                             </div>
                         </div>
                     </div>
@@ -123,16 +124,18 @@
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
                             <a class="bg-white btn p-4 rounded-lg text-xs">CloudSync</a>
-                            <h2 class="card-title">Add Dark Mode</h2>
+                            <h2 id="title-2" class="card-title">Add Dark Mode</h2>
                             <p class="flex justify-center items-center bg-white p-2 w-[250px] text-sm opacity-70">Store
                                 the user's
                                 preference in localStorage, update CSS...</p>
+                            <p class="border-b-2 border-dashed border-b-slate-300"></p>
                             <div class="flex justify-around items-center gap-5">
                                 <div>
                                     <p class="text-xs">Deadline</p>
                                     <h3 class="text-sm">21 March 2025</h3>
                                 </div>
-                                <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                                <button id="completedBtn2"
+                                    class="btn box-completed bg-[#3752FD] text-white rounded-lg">completed</button>
                             </div>
                         </div>
                     </div>
@@ -141,19 +144,21 @@
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
                             <a class="bg-white btn p-4 rounded-lg text-xs">SwiftPay</a>
-                            <h2 class="card-title">Optimize Home page </h2>
+                            <h2 id="title-3" class="card-title">Optimize Home page </h2>
                             <p class="flex justify-center items-center bg-white p-2 w-[250px] text-sm opacity-70 ">Debug
                                 using
                                 Chrome
                                 DevTools check
                                 for
                                 overlapping ...</p>
+                            <p class="border-b-2 border-dashed border-b-slate-300"></p>
                             <div class="flex justify-around items-center gap-5">
                                 <div>
                                     <p class="text-xs">Deadline</p>
                                     <h3 class="text-sm">21 March 2025</h3>
                                 </div>
-                                <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                                <button id="completedBtn3"
+                                    class="btn box-completed bg-[#3752FD] text-white rounded-lg">completed</button>
                             </div>
                         </div>
                     </div>
@@ -162,19 +167,21 @@
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
                             <a class="bg-white btn p-4 rounded-lg text-xs">SwiftPay</a>
-                            <h2 class="card-title">Optimize Home page </h2>
+                            <h2 id="title-4" class="card-title">Add new emoji 🤲</h2>
                             <p class="flex justify-center items-center bg-white p-2 w-[250px] text-sm opacity-70">Debug
                                 using
                                 Chrome
                                 DevTools check
                                 for
                                 overlapping ...</p>
+                            <p class="border-b-2 border-dashed border-b-slate-300"></p>
                             <div class="flex justify-around items-center gap-5">
                                 <div>
                                     <p class="text-xs">Deadline</p>
                                     <h3 class="text-sm">21 March 2025</h3>
                                 </div>
-                                <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                                <button id="completedBtn4"
+                                    class="btn box-completed bg-[#3752FD] text-white rounded-lg">completed</button>
                             </div>
                         </div>
                     </div>
@@ -183,19 +190,21 @@
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
                             <a class="bg-white btn p-4 rounded-lg text-xs">SwiftPay</a>
-                            <h2 class="card-title">Optimize Home page </h2>
+                            <h2 id="title-5" class="card-title">Integrate OpenAI API </h2>
                             <p class="flex justify-center items-center bg-white p-2 w-[250px] text-sm opacity-70">Debug
                                 using
                                 Chrome
                                 DevTools check
                                 for
                                 overlapping ...</p>
+                            <p class="border-b-2 border-dashed border-b-slate-300"></p>
                             <div class="flex justify-around items-center gap-5">
                                 <div>
                                     <p class="text-xs">Deadline</p>
                                     <h3 class="text-sm">21 March 2025</h3>
                                 </div>
-                                <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                                <button id="completedBtn5"
+                                    class="btn box-completed bg-[#3752FD] text-white rounded-lg">completed</button>
                             </div>
                         </div>
                     </div>
@@ -204,19 +213,21 @@
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
                             <a class="bg-white btn p-4 rounded-lg text-xs">SwiftPay</a>
-                            <h2 class="card-title">Optimize Home page </h2>
+                            <h2 id="title-6" class="card-title">Improve Job searching </h2>
                             <p class="flex justify-center items-center bg-white p-2 w-[250px] text-sm opacity-70">Debug
                                 using
                                 Chrome
                                 DevTools check
                                 for
                                 overlapping ...</p>
+                            <p class="border-b-2 border-dashed border-b-slate-300"></p>
                             <div class="flex justify-around items-center gap-5">
                                 <div>
                                     <p class="text-xs">Deadline</p>
                                     <h3 class="text-sm">21 March 2025</h3>
                                 </div>
-                                <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                                <button id="completedBtn6"
+                                    class="btn box-completed bg-[#3752FD] text-white rounded-lg">completed</button>
                             </div>
                         </div>
                     </div>
@@ -229,15 +240,25 @@
                         <img src="./assets/activity.png" alt="">
                         <p class="text-lg font-semibold">Activity Log</p>
                     </div>
-                    <div class="flex justify-center items-center gap-5"><button
-                            class="btn bg-[#3752FD] text-white rounded-lg">Clear History</button></div>
+                    <div class=" ">
+                        <button id="activityBtn" class="relative left-16 btn bg-[#3752FD] text-white rounded-lg ">Clear
+                            History</button>
+                        <p class="border-b-2 border-dashed border-b-slate-300 mt-5"></p>
+                        <div id="activity"></div>
+                    </div>
+
                 </div>
+
             </section>
 
         </section>
     </main>
 
     <footer></footer>
+
+    <script src="./script/utilis.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/main.js"></script>
 
 </body>
 
