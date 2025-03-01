@@ -83,13 +83,3 @@ document
     event.preventDefault();
     document.getElementById("activity").style.display = "none";
   });
-
-const btnOfThem = document.querySelector(".themBtn");
-btnOfThem.addEventListener("click", function (event) {
-  for (const them of themBtn) {
-    them.classList.add("bg-red-300");
-    them.classList.remove("bg-green-300");
-  }
-  event.target.classList.add("bg-green-300");
-  event.target.classList.remove("bg-red-300");
-});
