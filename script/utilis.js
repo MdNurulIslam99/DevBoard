@@ -1,17 +1,16 @@
-/* document.getElementById('completed').addEventListener('click',function(event){
-    
-}) */
-
+// converted value
 function getInnerTextById(id) {
   const value = document.getElementById(id).innerText;
   const convertedValue = parseInt(value);
   return convertedValue;
 }
 
-function setInnerTextbyIdandValue(id, value) {
+// set value
+function setInnerTextByIdAndValue(id, value) {
   document.getElementById(id).innerText = value;
 }
 
+// Disable Function
 function handleToggle(id, status) {
   document.getElementById(id).disabled = status;
 }

@@ -10,10 +10,10 @@ for (const btnCompleted of completedBtn) {
     // console.log(typeof valueOfBoard, valueOfBoard);
 
     const sumOfTask = assignedTask - 1;
-    setInnerTextbyIdandValue("taskAssigned", sumOfTask);
+    setInnerTextByIdAndValue("taskAssigned", sumOfTask);
 
     const sumOfBoardValue = valueOfBoard + 1;
-    setInnerTextbyIdandValue("boardValue", sumOfBoardValue);
+    setInnerTextByIdAndValue("boardValue", sumOfBoardValue);
   });
 }
 
