@@ -10,20 +10,6 @@ function setInnerTextByIdAndValue(id, value) {
   document.getElementById(id).innerText = value;
 }
 
-// Disable Function
-function disableButton(btnId) {
-  document.getElementById(btnId).disabled = true;
-}
-
-/* function handleToggle(id, status) {
-  document.getElementById(id).disabled = status;
-} */
-
-function handleToggle(className, status) {
-  document.getElementsByClassName(className).disabled = status;
-  document.querySelectorAll;
-}
-
 // create date
 
 function updateDate(id) {
