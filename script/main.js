@@ -36,18 +36,15 @@ for (const btnCompleted of completedBtn) {
   });
 }
 
-/* ------------------------------------------------------- */
+let button = 0;
 
-let button = 0; // To track the number of disabled buttons
-
-// Loop through button IDs and assign event listeners
 for (let i = 1; i <= 6; i++) {
   let buttonAll = document.getElementById("completedBtn" + i);
 
   buttonAll.addEventListener("click", function () {
     if (!this.disabled) {
-      this.disabled = true; // Disable the clicked button
-      button++; // Increase the count
+      this.disabled = true;
+      button++;
 
       if (button === 6) {
         alert("congratulation!!! You have completed all the current task");
@@ -55,116 +52,6 @@ for (let i = 1; i <= 6; i++) {
     }
   });
 }
-
-/* --------------------- */
-/* 
-//   button-1
-document
-  .getElementById("completedBtn1")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title");
-  });
-
-//   button-2
-document
-  .getElementById("completedBtn2")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-2");
-  });
-
-//   button-3
-document
-  .getElementById("completedBtn3")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-3");
-  });
-
-//   button-4
-document
-  .getElementById("completedBtn4")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-4");
-  });
-
-//   button-5
-document
-  .getElementById("completedBtn5")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-5");
-  });
-
-//   button-6
-document
-  .getElementById("completedBtn6")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    // alert("congratulation!!! You have completed all the current task");
-    addTitle("title-6");
-  }); */
-
-/* ------------------------------------------------------------------------- */
-/* 
-//   button-1
-document
-  .getElementById("completedBtn")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title");
-    handleToggle("completedBtn", true);
-  });
-
-//   button-2
-document
-  .getElementById("completedBtn2")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-2");
-
-    handleToggle("completedBtn2", true);
-  });
-
-//   button-3
-document
-  .getElementById("completedBtn3")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-3");
-    handleToggle("completedBtn3", true);
-  });
-
-//   button-4
-document
-  .getElementById("completedBtn4")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-4");
-    handleToggle("completedBtn4", true);
-  });
-
-//   button-5
-document
-  .getElementById("completedBtn5")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    addTitle("title-5");
-    handleToggle("completedBtn5", true);
-  });
-
-//   button-6
-document
-  .getElementById("completedBtn6")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    alert("congratulation!!! You have completed all the current task");
-    addTitle("title-6");
-    handleToggle("completedBtn6", true);
-  });
- */
 
 // create date
 updateDate("addDate");
