@@ -88,11 +88,18 @@ document
   });
 
 // background Color
-const colors = ["purple", "orange", "green", "blue", "yellowGreen"];
+const bgColors = [
+  "aquamarine",
+  "purple",
+  "orange",
+  "green",
+  "blue",
+  "yellowGreen",
+  "tomato",
+];
 let i = 0;
-
 document.getElementById("themBtn").addEventListener("click", function (event) {
   event.preventDefault();
-  document.body.style.backgroundColor = colors[i];
-  i = (i + 1) % colors.length;
+  document.body.style.backgroundColor = bgColors[i];
+  i = (i + 1) % bgColors.length;
 });
