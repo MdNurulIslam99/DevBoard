@@ -82,9 +82,12 @@ document
   .getElementById("activityBtn")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    document.getElementById("text").remove();
+    const container = document.getElementById("activity");
+    container.innerText = " ";
+    // document.getElementById("text").remove();
   });
 
+// background Color
 const colors = ["purple", "orange", "green", "blue", "yellowGreen"];
 let i = 0;
 

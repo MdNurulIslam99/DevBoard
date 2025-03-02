@@ -37,7 +37,7 @@ function addTitle(id) {
   });
   const titleContent = document.getElementById(id).innerText;
   const div = document.createElement("div");
-  div.classList.add("bg-[#F4F7FF]", "mt-5");
+  div.classList.add("bg-[#F4F7FF]", "mt-5", "id");
   div.innerHTML = `<h2 id='text' class="p-4 text-base rounded-lg">You have completed the task 
   <span class='font-semibold'>${titleContent}</span> at <span class='font-semibold'>${time}</span>`;
   container.appendChild(div);
