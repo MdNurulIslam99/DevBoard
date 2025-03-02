@@ -29,19 +29,11 @@
         <nav class="max-w-screen-xl mx-auto mt-5 p-5 ">
             <div class="navbar bg-white shadow-sm rounded-lg">
                 <div class="navbar-start ">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
 
-                    </div>
                     <div class="flex justify-center items-center">
-                        <img class="w-[40px]  h-[40px]" src="./assets/logo.png" alt="">
-                        <a class="btn btn-ghost text-3xl font-semibold">Dev<span class="font-bold">Board</span></a>
+                        <img class="lg:w-[40px] w-[20px]  lg:h-[40px] h-[20px] " src="./assets/logo.png" alt="">
+                        <a class="btn btn-ghost text-xl lg:text-3xl font-semibold">Dev<span
+                                class="font-bold">Board</span></a>
                     </div>
                 </div>
                 <div class="navbar-end">
@@ -63,10 +55,11 @@
     <main class=" max-w-screen-xl mx-auto mt-5">
         <section class="bg-[#F4F7FF] grid grid-cols-12 gap-7  ">
 
-            <section class="col-span-9 grid gap-5 bg-white p-5 rounded-xl">
+            <section class="lg:col-span-9 col-span-12 grid gap-5 bg-white p-5 rounded-xl">
 
-                <div class="grid grid-cols-12 gap-5">
-                    <div class="col-span-3 flex justify-center items-center gap-4 bg-[#F4F7FF] p-4 rounded-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                    <div
+                        class="lg:col-span-3 col-span-6 flex justify-center items-center gap-4 bg-[#F4F7FF] p-4 rounded-xl">
                         <div class="btn rounded-full w-[50px] h-[50px]"><img class="w-10 h-5"
                                 src="./assets/checkbox.png" alt="checkbox">
                         </div>
@@ -85,7 +78,8 @@
                         </div>
                     </div>
 
-                    <div class="col-span-3 flex justify-center items-center gap-2 bg-[#F4F7FF] p-5 rounded-xl">
+                    <div
+                        class="lg:col-span-3 col-span-6 flex justify-center items-center gap-2 bg-[#F4F7FF] p-5 rounded-xl">
                         <div class="btn rounded-full w-[50px] h-[50px]"><img class="w-10 h-5"
                                 src="./assets/calender.png" alt="checkbox">
                         </div>
@@ -96,7 +90,7 @@
 
                 </div>
 
-                <div class="grid grid-cols-3 gap-5 mt-5">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
 
                     <div class=" bg-[#F4F7FF] shadow-xl rounded-lg">
                         <div class="space-y-3  p-5 ">
@@ -228,14 +222,15 @@
                 </div>
             </section>
 
-            <section class="col-span-3 bg-white p-5 rounded-lg ">
+            <section class="lg:col-span-3 col-span-12 bg-white p-5 rounded-lg ">
                 <div class="space-y-5">
                     <div class="flex justify-center items-center gap-5">
                         <img src="./assets/activity.png" alt="">
                         <p class="text-lg font-semibold">Activity Log</p>
                     </div>
                     <div class=" ">
-                        <button id="activityBtn" class="relative left-16 btn bg-[#3752FD] text-white rounded-lg ">Clear
+                        <button id="activityBtn"
+                            class="relative lg:left-16 left-32 btn bg-[#3752FD] text-white rounded-lg ">Clear
                             History</button>
                         <p class="border-b-2 border-dashed border-b-slate-300 mt-5"></p>
                         <div id="activity">
