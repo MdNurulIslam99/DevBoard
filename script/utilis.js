@@ -11,8 +11,17 @@ function setInnerTextByIdAndValue(id, value) {
 }
 
 // Disable Function
-function handleToggle(id, status) {
+function disableButton(btnId) {
+  document.getElementById(btnId).disabled = true;
+}
+
+/* function handleToggle(id, status) {
   document.getElementById(id).disabled = status;
+} */
+
+function handleToggle(className, status) {
+  document.getElementsByClassName(className).disabled = status;
+  document.querySelectorAll;
 }
 
 // create date
@@ -25,7 +34,7 @@ function updateDate(id) {
 }
 
 // activity show when submit function
-function addTitle(id) {
+/* function addTitle(id) {
   const container = document.getElementById("activity");
   const dayTime = new Date();
   let time = dayTime.toLocaleString("en-US", {
@@ -34,10 +43,10 @@ function addTitle(id) {
     second: "numeric",
     hour12: true,
   });
-  const titleContent = document.getElementById(id).innerText;
+  const titleContent = document.getElementsById(id).innerText;
   const div = document.createElement("div");
-  div.classList.add("bg-[#F4F7FF]", "mt-5", "id");
+  div.classList.add("bg-[#F4F7FF]", "mt-5");
   div.innerHTML = `<h2 id='text' class="p-4 text-base rounded-lg">You have completed the task 
   <span class='font-semibold'>${titleContent}</span> at <span class='font-semibold'>${time}</span>`;
   container.appendChild(div);
-}
+} */
